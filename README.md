@@ -15,3 +15,12 @@ another child have?
 
 If you've got the travel bug, how does flying to a far off location
 compare to a more local trip?
+
+# How to Run It
+Install docker and docker-compose then do:
+
+```
+docker-compose up
+```
+
+Ctrl-C to stop
