@@ -17,10 +17,21 @@ If you've got the travel bug, how does flying to a far off location
 compare to a more local trip?
 
 # How to Run It
-Install docker and docker-compose then do:
+First install docker and docker-compose.
 
+## Development
+To run in development environment do:
 ```
 docker-compose up
 ```
+By default this includes configuration from  `docker-compose.yml` and `docker-compose.override.yml`
+
+## Production
+To run in production do:
+```
+docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
+```
+
+Optionally add `--build` argument to the commands above to automatically rebuild images when changes happen.
 
 Ctrl-C to stop
