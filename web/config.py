@@ -1,0 +1,1 @@
+# All config is in docker-compose files
