@@ -1,4 +1,6 @@
 'use strict';
+import React from "react";
+import ReactDOM from "react-dom";
 
 class LikeButton extends React.Component {
   constructor(props) {
@@ -19,5 +21,5 @@ class LikeButton extends React.Component {
   }
 }
 
-let domContainer = document.querySelector('#root');
+let domContainer = document.querySelector('#hey');
 ReactDOM.render(<LikeButton />, domContainer);

@@ -1,9 +1,10 @@
 const path = require('path');
  
 module.exports = {
+    mode: 'development',
     entry: './components/main.jsx',
     output: {
-        path: path.resolve(__dirname, 'flask_app/static/js/'),
+        path: path.resolve(__dirname, 'app/static/js/'),
         filename: "main.js"
     },
     module: {
