@@ -16,8 +16,17 @@ another child have?
 If you've got the travel bug, how does flying to a far off location
 compare to a more local trip?
 
+# Technologies
+Built in Python, Flask, Docker, and React
+
 # How to Run It
-First install docker and docker-compose.
+First install docker and docker-compose using the setup.sh script.
+```
+chmod +x setup.sh
+./setup.sh
+```
+
+Then:
 
 ## Development
 To run in development environment do:
