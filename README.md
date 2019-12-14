@@ -26,6 +26,12 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+Then start babel in a separate terminal to translate jsx to js:
+```
+npx babel --watch components/ --out-dir app/static/ --presets react-app/prod
+```
+TODO: make this automatic or shorter. Probably needs to be in dockerfile or  package.json or something?
+
 Then:
 
 ## Development
