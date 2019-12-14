@@ -17,7 +17,7 @@ If you've got the travel bug, how does flying to a far off location
 compare to a more local trip?
 
 # Technologies
-Built in Python, Flask, Docker, and React
+Built in Python, Flask, Docker, and React (through Webpack and Babel)
 
 # How to Run It
 First install docker and docker-compose using the setup.sh script.
@@ -25,12 +25,13 @@ First install docker and docker-compose using the setup.sh script.
 chmod +x setup.sh
 ./setup.sh
 ```
+Run locally:
 
-Then start babel in a separate terminal to translate jsx to js:
 ```
-npx babel --watch components/ --out-dir app/static/ --presets react-app/prod
+npm run build
 ```
-TODO: make this automatic or shorter. Probably needs to be in dockerfile or  package.json or something?
+
+TODO why isn't the above working from the docker container or running automatically when the code changes?
 
 Then:
 
