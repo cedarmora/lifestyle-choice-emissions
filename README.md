@@ -25,13 +25,6 @@ First install docker and docker-compose using the setup.sh script.
 chmod +x setup.sh
 ./setup.sh
 ```
-Run locally:
-
-```
-npm run build
-```
-
-TODO why isn't the above working from the docker container or running automatically when the code changes?
 
 Then:
 
