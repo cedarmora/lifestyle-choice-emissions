@@ -26,6 +26,8 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
+Second create a `.env` file using the `example.env` file configuring for your needs.
+
 Then:
 
 ## Development

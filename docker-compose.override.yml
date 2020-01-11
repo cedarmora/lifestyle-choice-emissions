@@ -3,8 +3,6 @@ services:
   web:
     volumes:
       - ./web:/app
-    environment:
-      - FLASK_ENV=development
     ports:
       - "5000:5000"
   frontend:
