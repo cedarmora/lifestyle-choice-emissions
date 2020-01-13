@@ -4,10 +4,15 @@ services:
     build: ./web
     environment:
       - FLASK_ENV
+      - FLASK_RUN_HOST
       - FLASK_RUN_PORT
       - FLASK_APP=run.py
-      - FLASK_RUN_HOST=0.0.0.0
   frontend:
     environment:
       - REACT_PORT
+      - FLASK_RUN_HOST
+      - FLASK_RUN_PORT
+      - HTTP_PROXY
+      - REACT_APP_FLASK_RUN_HOST=${FLASK_RUN_HOST}
+      - REACT_APP_FLASK_RUN_PORT=${FLASK_RUN_PORT}
     build: ./frontend
