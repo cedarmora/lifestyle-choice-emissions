@@ -1,6 +1,6 @@
 version: '3'
 services:
-  web:
+  api:
     ports:
       - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
   frontend:

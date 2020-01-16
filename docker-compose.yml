@@ -1,7 +1,15 @@
 version: '3'
 services:
-  web:
-    build: ./web
+  nginx-proxy:
+    nginx-proxy:
+      image: jwilder/nginx-proxy
+      ports:
+        - "80:80"
+      volumes:
+        - /var/run/docker.sock:/tmp/docker.sock:ro
+
+  api:
+    build: ./api
     environment:
       - FLASK_ENV
       - FLASK_RUN_HOST

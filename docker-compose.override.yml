@@ -1,12 +1,16 @@
 version: '3'
 services:
-  web:
+  api:
     volumes:
-      - ./web:/app
-    ports:
-      - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
+      - ./api:/app
+    expose:
+      - "${FLASK_RUN_PORT}"
+    # ports:
+    #  - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
   frontend:
     volumes:
       - ./frontend:/app
-    ports:
-      - "${REACT_PORT}:${REACT_PORT}"
+    expose:
+      - "${REACT_PORT}"
+    # ports:
+    #  - "${REACT_PORT}:${REACT_PORT}"
