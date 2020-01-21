@@ -28,6 +28,8 @@ chmod +x setup.sh
 
 Second create a `.env` file using the `example.env` file configuring for your needs.
 
+Third FIXME you may need to edit the Access-Control-Allow-Origin header in `./proxy/api-nginx-config` to set the allowed CORS origin to the website's address.
+
 Then:
 
 ## Development
