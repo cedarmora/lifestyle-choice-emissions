@@ -1,5 +1,8 @@
 version: '3'
 services:
+  nginx-proxy:
+    volumes:
+      - ./proxy/api-nginx-config:/etc/nginx/vhost.d/api.localhost
   api:
     volumes:
       - ./api:/app

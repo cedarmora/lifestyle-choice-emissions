@@ -11,6 +11,7 @@ services:
     build: ./api
     environment:
       - VIRTUAL_HOST=api.${SITE_URL}
+      - FRONTEND_URL=${SITE_URL}
       - FLASK_ENV
       - FLASK_RUN_HOST
       - FLASK_RUN_PORT
@@ -19,9 +20,5 @@ services:
     environment:
       - VIRTUAL_HOST=${SITE_URL}
       - REACT_PORT
-      - FLASK_RUN_HOST
-      - FLASK_RUN_PORT
-      - HTTP_PROXY
-      - REACT_APP_FLASK_RUN_HOST=${FLASK_RUN_HOST}
-      - REACT_APP_FLASK_RUN_PORT=${FLASK_RUN_PORT}
+      # - REACT_APP_API="api.${SITE_URL}"
     build: ./frontend
