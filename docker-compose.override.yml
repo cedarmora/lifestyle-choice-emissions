@@ -8,12 +8,8 @@ services:
       - ./api:/app
     expose:
       - "${FLASK_RUN_PORT}"
-    # ports:
-    #  - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
   frontend:
     volumes:
       - ./frontend:/app
     expose:
       - "${REACT_PORT}"
-    # ports:
-    #  - "${REACT_PORT}:${REACT_PORT}"
