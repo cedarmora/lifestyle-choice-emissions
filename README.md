@@ -1,8 +1,8 @@
 # Lifestyle Choice Emissions
 
 How do the lifestyle choices that we make affect the environment?
-Some actions have a huge impact, while others don't do too much.
-We can approximate this effect by the amount of carbon dioxide
+Some actions have a huge impact, while others don't do too much. 
+Based in a [study done by Seth Wynes and Kimberly A Nicholas](https://www.lunduniversity.lu.se/article/the-four-lifestyle-choices-that-most-reduce-your-carbon-footprint), we can approximate this effect by the amount of carbon dioxide
 equivalents that each choice makes, and through this we can design
 different lifestyles, and compare their environmental impact.
 
@@ -20,7 +20,7 @@ compare to a more local trip?
 Built in Python, Flask, Docker, and React (through Webpack and Babel)
 
 # How to Run It
-First install docker and docker-compose using the setup.sh script.
+Currently only tested on Linux. First install docker and docker-compose using the setup.sh script.
 ```
 chmod +x setup.sh
 ./setup.sh
@@ -37,10 +37,14 @@ To run in development environment do:
 ```
 docker-compose up
 ```
+
+Then go to `localhost` and the site should be visible. The API should
+be available at `api.localhost`.
+
 By default this includes configuration from  `docker-compose.yml` and `docker-compose.override.yml`
 
 ## Production
-To run in production do:
+Not completely implemented yet, but when it is, to run in production do:
 ```
 docker-compose -f docker-compose.yml -f docker-compose.prod.yml up
 ```
