@@ -9,11 +9,14 @@ class Chart extends React.Component {
   }
 
   componentDidMount() {
-    // let host = process.env.REACT_APP_FLASK_RUN_HOST
-    // let port = process.env.REACT_APP_FLASK_RUN_PORT
-    // fetch("${host}:${port}").then( results => {
-    //   let data = results.json().data.results;
-    // })
+    let api = process.env.REACT_APP_API_URL
+    fetch(`http://${api}`)
+      .then((response) => {
+        return response.json();
+      })
+      .then((myJson) => {
+        console.log(myJson);
+      });
   }
 
   render() {

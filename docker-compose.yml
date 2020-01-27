@@ -10,14 +10,14 @@ services:
   api:
     build: ./api
     environment:
-      - VIRTUAL_HOST=api.${SITE_URL}
+      - VIRTUAL_HOST=${API_URL}
       - FLASK_ENV
       - FLASK_RUN_HOST
       - FLASK_RUN_PORT
       - FLASK_APP=run.py
   frontend:
     environment:
-      - VIRTUAL_HOST=${SITE_URL}
+      - VIRTUAL_HOST=${FRONTEND_URL}
       - REACT_PORT
-      # - REACT_APP_API="api.${SITE_URL}"
+      - REACT_APP_API_URL=${API_URL}
     build: ./frontend
