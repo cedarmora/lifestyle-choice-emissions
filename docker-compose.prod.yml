@@ -1,8 +1,8 @@
 version: '3'
 services:
   api:
-    ports:
-      - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
+    # ports:
+      # - "${FLASK_RUN_PORT}:${FLASK_RUN_PORT}"
   frontend:
-    ports:
-      - "${REACT_PORT}:${REACT_PORT}"
+    # ports:
+      # - "${REACT_PORT}:${REACT_PORT}"
